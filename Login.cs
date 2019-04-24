@@ -19,12 +19,14 @@ namespace Audit_System
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close(); //Exit Program
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            //authenticate UN and PW with database, then open Main Menu
+            this.Hide(); //Hides Login Menu
+            MainMenu MainMenu = new MainMenu(); //Create instance of Main Menu
+            MainMenu.ShowDialog(); // Shows Main Menu
         }
     }
 }

@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Audit_System
 {
-    public partial class Form2 : Form
+    public partial class MainMenu : Form
     {
-        public Form2()
+        public MainMenu()
         {
             InitializeComponent();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

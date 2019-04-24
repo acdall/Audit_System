@@ -9,3 +9,4 @@ C:\Users\acdal\source\repos\Audit_System\Audit_System\obj\Debug\Audit_System.exe
 C:\Users\acdal\source\repos\Audit_System\Audit_System\obj\Debug\Audit_System.pdb
 C:\Users\acdal\source\repos\Audit_System\Audit_System\obj\Debug\Audit_System.MainMenu.resources
 C:\Users\acdal\source\repos\Audit_System\Audit_System\obj\Debug\Audit_System.Login.resources
+C:\Users\acdal\source\repos\Audit_System\Audit_System\obj\Debug\Audit_System.Audits.resources

@@ -19,7 +19,9 @@ namespace Audit_System
 
         private void Button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide(); //Hides Login Menu
+            Audits Audits = new Audits(); //Create instance of Audits
+            Audits.ShowDialog(); // Shows Audits
         }
 
         private void Button4_Click(object sender, EventArgs e)

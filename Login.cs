@@ -24,7 +24,7 @@ namespace Audit_System
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //authenticate UN and PW with database, then open Main Menu
         }
     }
 }

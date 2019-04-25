@@ -32,8 +32,8 @@ namespace Audit_System
         private void Button5_Click(object sender, EventArgs e)
         {
             this.Hide(); //Hides Login Menu
-            NewAudit NewAudit = new NewAudit(); //Create instance of Main Menu
-            NewAudit.ShowDialog(); // Shows Main Menu
+            NewAudit NewAudit = new NewAudit(); //Create instance of New Audit
+            NewAudit.ShowDialog(); // Shows New Audit
         }
 
         private void Button2_Click(object sender, EventArgs e)

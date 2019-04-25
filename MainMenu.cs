@@ -19,7 +19,7 @@ namespace Audit_System
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            this.Hide(); //Hides Login Menu
+            this.Hide(); //Hides Menu
             ViewReports Audits = new ViewReports(); //Create instance of Audits
             Audits.ShowDialog(); // Shows Audits
         }
@@ -31,16 +31,23 @@ namespace Audit_System
 
         private void Button5_Click(object sender, EventArgs e)
         {
-            this.Hide(); //Hides Login Menu
+            this.Hide(); //Hides Menu
             NewAudit NewAudit = new NewAudit(); //Create instance of New Audit
             NewAudit.ShowDialog(); // Shows New Audit
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            this.Hide(); //Hides Login Menu
+            this.Hide(); //Hides Menu
             Manage Manage = new Manage(); //Create instance of Manage
             Manage.ShowDialog(); // Shows Manage
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            this.Hide(); //Hides Menu
+            Search Search = new Search(); //Create instance of Search
+            Search.ShowDialog(); // Shows Search
         }
     }
 }

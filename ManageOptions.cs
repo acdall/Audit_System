@@ -19,14 +19,14 @@ namespace Audit_System
 
         private void Button5_Click(object sender, EventArgs e)
         {
-            this.Hide(); //Hides Login Menu
+            this.Hide(); //Hides Menu
             Manage Manage = new Manage(); //Create instance of Manage
             Manage.ShowDialog(); // Shows Manage
         }
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            this.Hide(); //Hides Login Menu
+            this.Hide(); //Hides Menu
             Manage Manage = new Manage(); //Create instance of Manage
             Manage.ShowDialog(); // Shows Manage
         }

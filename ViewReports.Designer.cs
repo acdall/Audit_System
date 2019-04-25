@@ -101,16 +101,7 @@
             this.button5.TabIndex = 6;
             this.button5.Text = "Save Reports";
             this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(463, 250);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(92, 37);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Print Reports";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.Button6_Click);
+
             // 
             // ViewReports
             // 

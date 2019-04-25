@@ -37,7 +37,7 @@
             this.ClientSize = new System.Drawing.Size(584, 561);
             this.Name = "Search";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Form3";
+            this.Text = "Search";
             this.ResumeLayout(false);
 
         }

@@ -20,13 +20,20 @@ namespace Audit_System
         private void Button1_Click(object sender, EventArgs e)
         {
             this.Hide(); //Hides Login Menu
-            Audits Audits = new Audits(); //Create instance of Audits
+            ViewReports Audits = new ViewReports(); //Create instance of Audits
             Audits.ShowDialog(); // Shows Audits
         }
 
         private void Button4_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            this.Hide(); //Hides Login Menu
+            NewAudit NewAudit = new NewAudit(); //Create instance of Main Menu
+            NewAudit.ShowDialog(); // Shows Main Menu
         }
     }
 }

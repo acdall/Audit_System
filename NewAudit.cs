@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Audit_System
 {
-    public partial class Audits : Form
+    public partial class NewAudit : Form
     {
-        public Audits()
+        public NewAudit()
         {
             InitializeComponent();
         }

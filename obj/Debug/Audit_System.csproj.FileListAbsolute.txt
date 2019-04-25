@@ -9,4 +9,6 @@ C:\Users\acdal\source\repos\Audit_System\Audit_System\obj\Debug\Audit_System.exe
 C:\Users\acdal\source\repos\Audit_System\Audit_System\obj\Debug\Audit_System.pdb
 C:\Users\acdal\source\repos\Audit_System\Audit_System\obj\Debug\Audit_System.MainMenu.resources
 C:\Users\acdal\source\repos\Audit_System\Audit_System\obj\Debug\Audit_System.Login.resources
-C:\Users\acdal\source\repos\Audit_System\Audit_System\obj\Debug\Audit_System.Audits.resources
+C:\Users\acdal\source\repos\Audit_System\Audit_System\obj\Debug\Audit_System.NewAudit.resources
+C:\Users\acdal\source\repos\Audit_System\Audit_System\obj\Debug\Audit_System.Form1.resources
+C:\Users\acdal\source\repos\Audit_System\Audit_System\obj\Debug\Audit_System.ViewReports.resources

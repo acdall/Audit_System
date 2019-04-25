@@ -110,6 +110,7 @@
             this.button6.TabIndex = 7;
             this.button6.Text = "Print Reports";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // ViewReports
             // 

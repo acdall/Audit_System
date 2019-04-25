@@ -23,5 +23,7 @@ namespace Audit_System
             MainMenu MainMenu = new MainMenu(); //Create instance of Main Menu
             MainMenu.ShowDialog(); // Shows Main Menu
         }
+
+
     }
 }

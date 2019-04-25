@@ -35,5 +35,12 @@ namespace Audit_System
             NewAudit NewAudit = new NewAudit(); //Create instance of Main Menu
             NewAudit.ShowDialog(); // Shows Main Menu
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            this.Hide(); //Hides Login Menu
+            Manage Manage = new Manage(); //Create instance of Manage
+            Manage.ShowDialog(); // Shows Manage
+        }
     }
 }

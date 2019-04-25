@@ -16,5 +16,12 @@ namespace Audit_System
         {
             InitializeComponent();
         }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            this.Hide(); //Hides Login Menu
+            MainMenu MainMenu = new MainMenu(); //Create instance of Main Menu
+            MainMenu.ShowDialog(); // Shows Main Menu
+        }
     }
 }

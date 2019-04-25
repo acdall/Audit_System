@@ -23,5 +23,38 @@ namespace Audit_System
             MainMenu MainMenu = new MainMenu(); //Create instance of Main Menu
             MainMenu.ShowDialog(); // Shows Main Menu
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide(); //Hides Login Menu
+            ManageOptions ManageOptions = new ManageOptions(); //Create instance ManageOptions
+            ManageOptions.ShowDialog(); // Shows ManageOptions
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            this.Hide(); //Hides Login Menu
+            ManageOptions ManageOptions = new ManageOptions(); //Create instance ManageOptions
+            ManageOptions.ShowDialog(); // Shows ManageOptions
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            this.Hide(); //Hides Login Menu
+            ManageOptions ManageOptions = new ManageOptions(); //Create instance ManageOptions
+            ManageOptions.ShowDialog(); // Shows ManageOptions
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            this.Hide(); //Hides Login Menu
+            ManageOptions ManageOptions = new ManageOptions(); //Create instance ManageOptions
+            ManageOptions.ShowDialog(); // Shows ManageOptions
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -23,5 +23,19 @@ namespace Audit_System
             MainMenu MainMenu = new MainMenu(); //Create instance of Main Menu
             MainMenu.ShowDialog(); // Shows Main Menu
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide(); //Hides Login Menu
+            AuditReport AuditReport = new AuditReport(); //Create instance of AuditReport
+            AuditReport.ShowDialog(); // Shows AuditReport
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            this.Hide(); //Hides Login Menu
+            ScoreCard ScoreCard = new ScoreCard(); //Create instance of ScoreCard
+            ScoreCard.ShowDialog(); // Shows ScoreCard
+        }
     }
 }

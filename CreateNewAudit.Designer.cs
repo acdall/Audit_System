@@ -65,6 +65,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Audit Reports";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
@@ -186,6 +187,7 @@
             this.button4.TabIndex = 18;
             this.button4.Text = "Score Card";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // button5
             // 

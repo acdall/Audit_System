@@ -53,6 +53,12 @@
     <Compile Include="AuditReport.Designer.cs">
       <DependentUpon>AuditReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageOptions.cs">
       <SubType>Form</SubType>
     </Compile>

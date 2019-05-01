@@ -14,47 +14,60 @@ namespace Audit_System
     {
         public Manage()
         {
+            
             InitializeComponent();
         }
 
         private void Button5_Click(object sender, EventArgs e)
         {
-            this.Hide(); //Hides Menu
-            MainMenu MainMenu = new MainMenu(); //Create instance of Main Menu
-            MainMenu.ShowDialog(); // Shows Main Menu
+           // this.Hide(); //Hides Menu
+           // MainMenu MainMenu = new MainMenu(); //Create instance of Main Menu
+           // MainMenu.ShowDialog(); // Shows Main Menu
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            this.Hide(); //Hides Menu
-            ManageOptions ManageOptions = new ManageOptions(); //Create instance ManageOptions
-            ManageOptions.ShowDialog(); // Shows ManageOptions
+           // this.Hide(); //Hides Menu
+           // ManageOptions ManageOptions = new ManageOptions(); //Create instance ManageOptions
+           // ManageOptions.ShowDialog(); // Shows ManageOptions
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            this.Hide(); //Hides Menu
-            ManageOptions ManageOptions = new ManageOptions(); //Create instance ManageOptions
-            ManageOptions.ShowDialog(); // Shows ManageOptions
+            //this.Hide(); //Hides Menu
+            //ManageOptions ManageOptions = new ManageOptions(); //Create instance ManageOptions
+            //ManageOptions.ShowDialog(); // Shows ManageOptions
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            this.Hide(); //Hides Menu
-            ManageOptions ManageOptions = new ManageOptions(); //Create instance ManageOptions
-            ManageOptions.ShowDialog(); // Shows ManageOptions
+            //this.Hide(); //Hides Menu
+            //ManageOptions ManageOptions = new ManageOptions(); //Create instance ManageOptions
+            //ManageOptions.ShowDialog(); // Shows ManageOptions
         }
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            this.Hide(); //Hides Menu
-            ManageOptions ManageOptions = new ManageOptions(); //Create instance ManageOptions
-            ManageOptions.ShowDialog(); // Shows ManageOptions
+            //this.Hide(); //Hides Menu
+            //ManageOptions ManageOptions = new ManageOptions(); //Create instance ManageOptions
+            //ManageOptions.ShowDialog(); // Shows ManageOptions
         }
 
         private void Button6_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Manage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FactoriesButton_Click(object sender, EventArgs e)
+        {
+            this.Hide(); //Hides Menu
+            ManageOptions factoryOption = new ManageOptions(); //Create instance ManageOptions
+            factoryOption.ShowDialog(); // Shows ManageOptions
         }
     }
 }

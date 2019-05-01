@@ -12,6 +12,7 @@ namespace Audit_System
 {
     public partial class ManageOptions : Form
     {
+      
         public ManageOptions()
         {
             InitializeComponent();
@@ -30,5 +31,11 @@ namespace Audit_System
             Manage Manage = new Manage(); //Create instance of Manage
             Manage.ShowDialog(); // Shows Manage
         }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            //Saves data to database eventually :) 
+        }
+        
     }
 }

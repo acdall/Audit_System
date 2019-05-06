@@ -10,32 +10,80 @@ using System.Windows.Forms;
 
 namespace Audit_System
 {
+   
+
     public partial class ManageOptions : Form
     {
-      
+
         public ManageOptions()
         {
             InitializeComponent();
         }
-
-        private void Button5_Click(object sender, EventArgs e)
-        {
-            this.Hide(); //Hides Menu
-            Manage Manage = new Manage(); //Create instance of Manage
-            Manage.ShowDialog(); // Shows Manage
-        }
-
-        private void Button4_Click(object sender, EventArgs e)
-        {
-            this.Hide(); //Hides Menu
-            Manage Manage = new Manage(); //Create instance of Manage
-            Manage.ShowDialog(); // Shows Manage
-        }
-
-        private void Button6_Click(object sender, EventArgs e)
-        {
-            //Saves data to database eventually :) 
-        }
         
+        public string Name
+        {
+            set { instanceLabel.Text = value; }
+        }
+
+        private void MainMenuButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //if --changes are made, save button needs to be clicked!!
+                this.Hide();
+                MainMenu goBack = new MainMenu();
+                goBack.ShowDialog();
+
+            }catch
+            {
+                MessageBox.Show("An error has occured, the program will be terminated", "Warning", MessageBoxButtons.OK); 
+            }
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //if -- changes are made, save button needs to be clicked!!
+
+                DialogResult answer = MessageBox.Show("Are you sure you want to exit?", "Exit?", MessageBoxButtons.YesNo); //Warning 
+                if (answer == DialogResult.Yes) //User answer selection 
+                {
+                    Application.Exit(); //Terminate because user selected yes
+                }
+            }catch
+            {
+                MessageBox.Show("An error has occured, the program will be terminated", "Warning", MessageBoxButtons.OK);
+
+            }
+        }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //Save changed data to database
+            }
+            catch
+            {
+                MessageBox.Show("An error has occured, the program will be terminated", "Warning", MessageBoxButtons.OK);
+
+            }
+        }
+
+        private void ReturnToMenuButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Hide();
+                Manage getBack = new Manage();
+                getBack.ShowDialog();
+            }
+            catch
+            {
+                MessageBox.Show("An error has occured, the program will be terminated", "Warning", MessageBoxButtons.OK);
+
+            }
+        }
     }
 }

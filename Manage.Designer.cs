@@ -37,9 +37,9 @@
             this.factoriesButton = new System.Windows.Forms.Button();
             this.defectButton = new System.Windows.Forms.Button();
             this.linesButton = new System.Windows.Forms.Button();
-            this.productionButton = new System.Windows.Forms.Button();
             this.shiftButton = new System.Windows.Forms.Button();
             this.zoneButton = new System.Windows.Forms.Button();
+            this.titleLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // categoriesButton
@@ -64,7 +64,7 @@
             // 
             // modelsButton
             // 
-            this.modelsButton.Location = new System.Drawing.Point(238, 94);
+            this.modelsButton.Location = new System.Drawing.Point(238, 140);
             this.modelsButton.Name = "modelsButton";
             this.modelsButton.Size = new System.Drawing.Size(75, 23);
             this.modelsButton.TabIndex = 2;
@@ -74,7 +74,7 @@
             // 
             // ratingsButton
             // 
-            this.ratingsButton.Location = new System.Drawing.Point(238, 52);
+            this.ratingsButton.Location = new System.Drawing.Point(238, 94);
             this.ratingsButton.Name = "ratingsButton";
             this.ratingsButton.Size = new System.Drawing.Size(75, 23);
             this.ratingsButton.TabIndex = 3;
@@ -84,7 +84,7 @@
             // 
             // menuButton
             // 
-            this.menuButton.Location = new System.Drawing.Point(60, 321);
+            this.menuButton.Location = new System.Drawing.Point(84, 293);
             this.menuButton.Name = "menuButton";
             this.menuButton.Size = new System.Drawing.Size(99, 23);
             this.menuButton.TabIndex = 4;
@@ -94,7 +94,7 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(185, 321);
+            this.exitButton.Location = new System.Drawing.Point(238, 293);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 23);
             this.exitButton.TabIndex = 5;
@@ -104,7 +104,7 @@
             // 
             // factoriesButton
             // 
-            this.factoriesButton.Location = new System.Drawing.Point(93, 52);
+            this.factoriesButton.Location = new System.Drawing.Point(238, 56);
             this.factoriesButton.Name = "factoriesButton";
             this.factoriesButton.Size = new System.Drawing.Size(75, 23);
             this.factoriesButton.TabIndex = 6;
@@ -114,7 +114,7 @@
             // 
             // defectButton
             // 
-            this.defectButton.Location = new System.Drawing.Point(238, 235);
+            this.defectButton.Location = new System.Drawing.Point(238, 226);
             this.defectButton.Name = "defectButton";
             this.defectButton.Size = new System.Drawing.Size(75, 23);
             this.defectButton.TabIndex = 7;
@@ -124,23 +124,13 @@
             // 
             // linesButton
             // 
-            this.linesButton.Location = new System.Drawing.Point(238, 140);
+            this.linesButton.Location = new System.Drawing.Point(238, 187);
             this.linesButton.Name = "linesButton";
             this.linesButton.Size = new System.Drawing.Size(75, 23);
             this.linesButton.TabIndex = 8;
             this.linesButton.Text = "Lines";
             this.linesButton.UseVisualStyleBackColor = true;
             this.linesButton.Click += new System.EventHandler(this.LinesButton_Click);
-            // 
-            // productionButton
-            // 
-            this.productionButton.Location = new System.Drawing.Point(238, 187);
-            this.productionButton.Name = "productionButton";
-            this.productionButton.Size = new System.Drawing.Size(75, 23);
-            this.productionButton.TabIndex = 9;
-            this.productionButton.Text = "Production";
-            this.productionButton.UseVisualStyleBackColor = true;
-            this.productionButton.Click += new System.EventHandler(this.ProductionButton_Click);
             // 
             // shiftButton
             // 
@@ -162,14 +152,24 @@
             this.zoneButton.UseVisualStyleBackColor = true;
             this.zoneButton.Click += new System.EventHandler(this.ZoneButton_Click_1);
             // 
+            // titleLabel
+            // 
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.Location = new System.Drawing.Point(117, 16);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(144, 24);
+            this.titleLabel.TabIndex = 12;
+            this.titleLabel.Text = "Manage Menu";
+            // 
             // Manage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 561);
+            this.ClientSize = new System.Drawing.Size(418, 373);
+            this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.zoneButton);
             this.Controls.Add(this.shiftButton);
-            this.Controls.Add(this.productionButton);
             this.Controls.Add(this.linesButton);
             this.Controls.Add(this.defectButton);
             this.Controls.Add(this.factoriesButton);
@@ -184,6 +184,7 @@
             this.Text = "Manage";
             this.Load += new System.EventHandler(this.Manage_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -198,8 +199,8 @@
         private System.Windows.Forms.Button factoriesButton;
         private System.Windows.Forms.Button defectButton;
         private System.Windows.Forms.Button linesButton;
-        private System.Windows.Forms.Button productionButton;
         private System.Windows.Forms.Button shiftButton;
         private System.Windows.Forms.Button zoneButton;
+        private System.Windows.Forms.Label titleLabel;
     }
 }

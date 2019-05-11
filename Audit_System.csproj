@@ -74,6 +74,30 @@
     <Compile Include="Edit.Designer.cs">
       <DependentUpon>Edit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Defect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Defect.Designer.cs">
+      <DependentUpon>Defect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageMany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageMany.Designer.cs">
+      <DependentUpon>ManageMany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageFactories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageFactories.Designer.cs">
+      <DependentUpon>ManageFactories.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageOptions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +109,12 @@
     </Compile>
     <Compile Include="Manage.Designer.cs">
       <DependentUpon>Manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageShift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageShift.Designer.cs">
+      <DependentUpon>ManageShift.cs</DependentUpon>
     </Compile>
     <Compile Include="ScoreCard.cs">
       <SubType>Form</SubType>
@@ -127,14 +157,29 @@
     <EmbeddedResource Include="AuditReport.resx">
       <DependentUpon>AuditReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Defect.resx">
+      <DependentUpon>Defect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageMany.resx">
+      <DependentUpon>ManageMany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageFactories.resx">
+      <DependentUpon>ManageFactories.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageOptions.resx">
       <DependentUpon>ManageOptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manage.resx">
       <DependentUpon>Manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageShift.resx">
+      <DependentUpon>ManageShift.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ScoreCard.resx">
       <DependentUpon>ScoreCard.cs</DependentUpon>

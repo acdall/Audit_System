@@ -17,6 +17,7 @@ namespace Audit_System
 
         public ManageOptions()
         {
+            //get data from database and display on list 
             InitializeComponent();
         }
         
@@ -84,6 +85,21 @@ namespace Audit_System
                 MessageBox.Show("An error has occured, the program will be terminated", "Warning", MessageBoxButtons.OK);
 
             }
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            //redirect to new window to add data fields 
+        }
+
+        private void RemoveButton_Click(object sender, EventArgs e)
+        {
+            //remove item from list in database
+        }
+
+        private void EditButton_Click(object sender, EventArgs e)
+        {
+            //redirect to new form to edit an existing entry in the database
         }
     }
 }

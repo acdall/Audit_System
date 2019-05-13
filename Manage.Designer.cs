@@ -35,71 +35,76 @@
             this.menuButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.factoriesButton = new System.Windows.Forms.Button();
+            this.defectButton = new System.Windows.Forms.Button();
+            this.linesButton = new System.Windows.Forms.Button();
+            this.shiftButton = new System.Windows.Forms.Button();
+            this.zoneButton = new System.Windows.Forms.Button();
+            this.titleLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // categoriesButton
             // 
-            this.categoriesButton.Location = new System.Drawing.Point(129, 81);
+            this.categoriesButton.Location = new System.Drawing.Point(93, 94);
             this.categoriesButton.Name = "categoriesButton";
             this.categoriesButton.Size = new System.Drawing.Size(75, 23);
             this.categoriesButton.TabIndex = 0;
             this.categoriesButton.Text = "Categories";
             this.categoriesButton.UseVisualStyleBackColor = true;
-            this.categoriesButton.Click += new System.EventHandler(this.Button1_Click);
+            this.categoriesButton.Click += new System.EventHandler(this.CategoriesButton_Click);
             // 
             // productsButton
             // 
-            this.productsButton.Location = new System.Drawing.Point(129, 128);
+            this.productsButton.Location = new System.Drawing.Point(93, 140);
             this.productsButton.Name = "productsButton";
             this.productsButton.Size = new System.Drawing.Size(75, 23);
             this.productsButton.TabIndex = 1;
             this.productsButton.Text = "Products";
             this.productsButton.UseVisualStyleBackColor = true;
-            this.productsButton.Click += new System.EventHandler(this.Button2_Click);
+            this.productsButton.Click += new System.EventHandler(this.ProductsButton_Click);
             // 
             // modelsButton
             // 
-            this.modelsButton.Location = new System.Drawing.Point(315, 81);
+            this.modelsButton.Location = new System.Drawing.Point(238, 140);
             this.modelsButton.Name = "modelsButton";
             this.modelsButton.Size = new System.Drawing.Size(75, 23);
             this.modelsButton.TabIndex = 2;
             this.modelsButton.Text = "Models";
             this.modelsButton.UseVisualStyleBackColor = true;
-            this.modelsButton.Click += new System.EventHandler(this.Button3_Click);
+            this.modelsButton.Click += new System.EventHandler(this.ModelsButton_Click);
             // 
             // ratingsButton
             // 
-            this.ratingsButton.Location = new System.Drawing.Point(345, 128);
+            this.ratingsButton.Location = new System.Drawing.Point(238, 94);
             this.ratingsButton.Name = "ratingsButton";
             this.ratingsButton.Size = new System.Drawing.Size(75, 23);
             this.ratingsButton.TabIndex = 3;
             this.ratingsButton.Text = "Ratings";
             this.ratingsButton.UseVisualStyleBackColor = true;
-            this.ratingsButton.Click += new System.EventHandler(this.Button4_Click);
+            this.ratingsButton.Click += new System.EventHandler(this.RatingsButton_Click);
             // 
             // menuButton
             // 
-            this.menuButton.Location = new System.Drawing.Point(53, 257);
+            this.menuButton.Location = new System.Drawing.Point(84, 293);
             this.menuButton.Name = "menuButton";
             this.menuButton.Size = new System.Drawing.Size(99, 23);
             this.menuButton.TabIndex = 4;
             this.menuButton.Text = "Return to Menu";
             this.menuButton.UseVisualStyleBackColor = true;
-            this.menuButton.Click += new System.EventHandler(this.Button5_Click);
+            this.menuButton.Click += new System.EventHandler(this.MenuButton_Click);
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(191, 257);
+            this.exitButton.Location = new System.Drawing.Point(238, 293);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 23);
             this.exitButton.TabIndex = 5;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
-            this.exitButton.Click += new System.EventHandler(this.Button6_Click);
+            this.exitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // factoriesButton
             // 
-            this.factoriesButton.Location = new System.Drawing.Point(255, 183);
+            this.factoriesButton.Location = new System.Drawing.Point(238, 56);
             this.factoriesButton.Name = "factoriesButton";
             this.factoriesButton.Size = new System.Drawing.Size(75, 23);
             this.factoriesButton.TabIndex = 6;
@@ -107,11 +112,66 @@
             this.factoriesButton.UseVisualStyleBackColor = true;
             this.factoriesButton.Click += new System.EventHandler(this.FactoriesButton_Click);
             // 
+            // defectButton
+            // 
+            this.defectButton.Location = new System.Drawing.Point(238, 226);
+            this.defectButton.Name = "defectButton";
+            this.defectButton.Size = new System.Drawing.Size(75, 23);
+            this.defectButton.TabIndex = 7;
+            this.defectButton.Text = "Defect";
+            this.defectButton.UseVisualStyleBackColor = true;
+            this.defectButton.Click += new System.EventHandler(this.DefectButton_Click);
+            // 
+            // linesButton
+            // 
+            this.linesButton.Location = new System.Drawing.Point(238, 187);
+            this.linesButton.Name = "linesButton";
+            this.linesButton.Size = new System.Drawing.Size(75, 23);
+            this.linesButton.TabIndex = 8;
+            this.linesButton.Text = "Lines";
+            this.linesButton.UseVisualStyleBackColor = true;
+            this.linesButton.Click += new System.EventHandler(this.LinesButton_Click);
+            // 
+            // shiftButton
+            // 
+            this.shiftButton.Location = new System.Drawing.Point(93, 226);
+            this.shiftButton.Name = "shiftButton";
+            this.shiftButton.Size = new System.Drawing.Size(75, 23);
+            this.shiftButton.TabIndex = 10;
+            this.shiftButton.Text = "Shift";
+            this.shiftButton.UseVisualStyleBackColor = true;
+            this.shiftButton.Click += new System.EventHandler(this.ShiftButton_Click);
+            // 
+            // zoneButton
+            // 
+            this.zoneButton.Location = new System.Drawing.Point(93, 187);
+            this.zoneButton.Name = "zoneButton";
+            this.zoneButton.Size = new System.Drawing.Size(75, 23);
+            this.zoneButton.TabIndex = 11;
+            this.zoneButton.Text = "Zone";
+            this.zoneButton.UseVisualStyleBackColor = true;
+            this.zoneButton.Click += new System.EventHandler(this.ZoneButton_Click_1);
+            // 
+            // titleLabel
+            // 
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.Location = new System.Drawing.Point(117, 16);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(144, 24);
+            this.titleLabel.TabIndex = 12;
+            this.titleLabel.Text = "Manage Menu";
+            // 
             // Manage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 561);
+            this.ClientSize = new System.Drawing.Size(418, 373);
+            this.Controls.Add(this.titleLabel);
+            this.Controls.Add(this.zoneButton);
+            this.Controls.Add(this.shiftButton);
+            this.Controls.Add(this.linesButton);
+            this.Controls.Add(this.defectButton);
             this.Controls.Add(this.factoriesButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.menuButton);
@@ -124,6 +184,7 @@
             this.Text = "Manage";
             this.Load += new System.EventHandler(this.Manage_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -136,5 +197,10 @@
         private System.Windows.Forms.Button menuButton;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button factoriesButton;
+        private System.Windows.Forms.Button defectButton;
+        private System.Windows.Forms.Button linesButton;
+        private System.Windows.Forms.Button shiftButton;
+        private System.Windows.Forms.Button zoneButton;
+        private System.Windows.Forms.Label titleLabel;
     }
 }

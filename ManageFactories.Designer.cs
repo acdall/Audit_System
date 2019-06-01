@@ -37,7 +37,7 @@
             this.cityTextBox = new System.Windows.Forms.TextBox();
             this.addressTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
-            this.saveButton = new System.Windows.Forms.Button();
+            this.backButton = new System.Windows.Forms.Button();
             this.submitButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.countryLabel = new System.Windows.Forms.Label();
@@ -120,15 +120,15 @@
             this.nameTextBox.TabIndex = 8;
             this.nameTextBox.TextChanged += new System.EventHandler(this.NameTextBox_TextChanged);
             // 
-            // saveButton
+            // backButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(142, 328);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 23);
-            this.saveButton.TabIndex = 9;
-            this.saveButton.Text = "Save";
-            this.saveButton.UseVisualStyleBackColor = true;
-            this.saveButton.Click += new System.EventHandler(this.SaveButton_Click);
+            this.backButton.Location = new System.Drawing.Point(142, 328);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(75, 23);
+            this.backButton.TabIndex = 9;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // submitButton
             // 
@@ -194,7 +194,7 @@
             this.Controls.Add(this.countryLabel);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.submitButton);
-            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.addressTextBox);
             this.Controls.Add(this.cityTextBox);
@@ -205,7 +205,7 @@
             this.Controls.Add(this.addressLabel);
             this.Controls.Add(this.nameLabel);
             this.Name = "ManageFactories";
-            this.Text = "Factories";
+            this.Text = "Manage Factories";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,7 +222,7 @@
         private System.Windows.Forms.TextBox cityTextBox;
         private System.Windows.Forms.TextBox addressTextBox;
         private System.Windows.Forms.TextBox nameTextBox;
-        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Button submitButton;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label countryLabel;

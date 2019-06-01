@@ -114,14 +114,31 @@ namespace Audit_System
             }
         }
 
-        private void SaveButton_Click(object sender, EventArgs e)
-        {
-            //Will save??
-        }
+
 
         private void NameTextBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult answer = MessageBox.Show("Your changes have not been submitted. Are you sure you want to leave?", "Exit?", MessageBoxButtons.YesNo); //Warning 
+                if (answer == DialogResult.Yes) //User answer selection 
+                {
+                    this.Hide(); //Hides Menu
+                    ManageOptions factoryOption = new ManageOptions(); //Create instance ManageOptions
+                    factoryOption.Name = "Manage Factories"; //Changes the label in the ManageOptions form
+                    factoryOption.ShowDialog(); // Shows ManageOptions           }
+                }
+            }
+            catch
+            {
+                MessageBox.Show("An error has occured, the program will be terminated", "Warning", MessageBoxButtons.OK);
+
+            }
         }
     }
 }

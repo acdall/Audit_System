@@ -12,29 +12,29 @@ using System.Text.RegularExpressions;
 
 namespace Audit_System
 {
-    public partial class ManageCategories : Form
+    public partial class ManageModels : Form
     {
-        public ManageCategories()
+        public ManageModels()
         {
             InitializeComponent();
         }
-        public string CategoryLabel
+        public string ModelLabel
         {
             set { titleLabel.Text = value; }
         }
-        private void ExitButton_Click(object sender, EventArgs e)
-        {//submit button NOT Exit... 
-            //check to see if category name already exists
+        //******GET CATEGORY INFO FROM DATABASE
 
+        private void SubmitButton_Click(object sender, EventArgs e)
+        {
             try
             {
                 if (string.IsNullOrEmpty(nameTextBox.Text) || string.IsNullOrWhiteSpace(nameTextBox.Text))
                 {
-                    MessageBox.Show("Please Enter a Valid Category Name.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Please Enter a Valid Model Name.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else if (!Regex.Match(nameTextBox.Text, "^[a-zA-Z]*$").Success)
                 {
-                    MessageBox.Show("Invalid Category Name: A category name cannot contain numbers or special characters", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Invalid Model Name: A model name cannot contain numbers or special characters", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     nameTextBox.Focus();
                 }
                 else
@@ -49,7 +49,7 @@ namespace Audit_System
             }
         }
 
-        private void ExButton_Click(object sender, EventArgs e)
+        private void ExitButton_Click(object sender, EventArgs e)
         {
             try
             {
@@ -72,19 +72,18 @@ namespace Audit_System
         {
             try
             {
-                DialogResult answer = MessageBox.Show("Your changes have not been submitted. Are you sure you want to leave?", "Exit?", MessageBoxButtons.YesNo); //Warning 
+                DialogResult answer = MessageBox.Show("Your changes have not been submitted. Are you sure you want to leave?", "Warning", MessageBoxButtons.YesNo); //Warning 
                 if (answer == DialogResult.Yes) //User answer selection 
                 {
                     this.Hide(); //Hides Menu
-                    ManageOptions categoriesOption = new ManageOptions(); //Create instance ManageOptions
-                    categoriesOption.Name = "Manage Categories"; //Changes the label in the ManageOptions form
-                    categoriesOption.ShowDialog(); // Shows ManageOptions                }
+                    ManageOptions modelsOption = new ManageOptions(); //Create instance ManageOptions
+                    modelsOption.Name = "Manage Models"; //Changes the label in the ManageOptions form
+                    modelsOption.ShowDialog(); // Shows ManageOptions
                 }
             }
             catch
             {
                 MessageBox.Show("An error has occured, the program will be terminated", "Warning", MessageBoxButtons.OK);
-
             }
         }
     }

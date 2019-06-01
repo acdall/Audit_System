@@ -97,20 +97,6 @@ namespace Audit_System
             }
         }
 
-        private void RatingsButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.Hide(); //Hides Menu
-                ManageOptions ratingsOption = new ManageOptions(); //Create instance ManageOptions
-                ratingsOption.Name = "Manage Ratings"; //Changes the label in the ManageOptions form
-                ratingsOption.ShowDialog(); // Shows ManageOptions
-            }
-            catch
-            {
-                MessageBox.Show("An error has occured, the program will be terminated", "Warning", MessageBoxButtons.OK);
-            }
-        }
 
         private void ModelsButton_Click(object sender, EventArgs e)
         {

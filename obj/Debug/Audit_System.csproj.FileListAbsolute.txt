@@ -36,10 +36,11 @@ C:\Users\Brooke\Documents\GitHub\Audit_System1\obj\Debug\Audit_System.exe
 C:\Users\Brooke\Documents\GitHub\Audit_System1\obj\Debug\Audit_System.pdb
 C:\Users\Brooke\Documents\GitHub\Audit_System1\obj\Debug\Audit_System.DefectForm.resources
 C:\Users\Brooke\Documents\GitHub\Audit_System1\obj\Debug\Audit_System.Form1.resources
-C:\Users\Brooke\Documents\GitHub\Audit_System1\obj\Debug\Audit_System.Manage_Products.resources
 C:\Users\Brooke\Documents\GitHub\Audit_System1\obj\Debug\Audit_System.ManageDefects.resources
-C:\Users\Brooke\Documents\GitHub\Audit_System1\obj\Debug\Audit_System.multipleFieldsForm.resources
 C:\Users\Brooke\Documents\GitHub\Audit_System1\obj\Debug\Audit_System.ManageFactories.resources
 C:\Users\Brooke\Documents\GitHub\Audit_System1\obj\Debug\Audit_System.manageShiftForm.resources
 C:\Users\Brooke\Documents\GitHub\Audit_System1\obj\Debug\Audit_System.ManageZone.resources
 C:\Users\Brooke\Documents\GitHub\Audit_System1\obj\Debug\Audit_System.ManageCategories.resources
+C:\Users\Brooke\Documents\GitHub\Audit_System1\obj\Debug\Audit_System.ManageModels.resources
+C:\Users\Brooke\Documents\GitHub\Audit_System1\obj\Debug\Audit_System.ManageLines.resources
+C:\Users\Brooke\Documents\GitHub\Audit_System1\obj\Debug\Audit_System.ManageProducts.resources

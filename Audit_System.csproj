@@ -91,6 +91,24 @@
     <Compile Include="Defect.Designer.cs">
       <DependentUpon>Defect.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manage Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Products.Designer.cs">
+      <DependentUpon>Manage Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageCategories.Designer.cs">
+      <DependentUpon>ManageCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageDefects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageDefects.Designer.cs">
+      <DependentUpon>ManageDefects.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageMany.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +138,12 @@
     </Compile>
     <Compile Include="ManageShift.Designer.cs">
       <DependentUpon>ManageShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageZone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageZone.Designer.cs">
+      <DependentUpon>ManageZone.cs</DependentUpon>
     </Compile>
     <Compile Include="ScoreCard.cs">
       <SubType>Form</SubType>
@@ -171,6 +195,15 @@
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Manage Products.resx">
+      <DependentUpon>Manage Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageCategories.resx">
+      <DependentUpon>ManageCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageDefects.resx">
+      <DependentUpon>ManageDefects.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManageMany.resx">
       <DependentUpon>ManageMany.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManageShift.resx">
       <DependentUpon>ManageShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageZone.resx">
+      <DependentUpon>ManageZone.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ScoreCard.resx">
       <DependentUpon>ScoreCard.cs</DependentUpon>
@@ -233,15 +269,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Audit.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Audit_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Audit.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

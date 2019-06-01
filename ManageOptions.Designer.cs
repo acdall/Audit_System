@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.titleLabel = new System.Windows.Forms.Label();
             this.factorsListBox = new System.Windows.Forms.ListBox();
             this.editButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
@@ -42,16 +41,6 @@
             this.mainMenuButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // titleLabel
-            // 
-            this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(177, 9);
-            this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(85, 24);
-            this.titleLabel.TabIndex = 0;
-            this.titleLabel.Text = "Manage";
-            // 
             // factorsListBox
             // 
             this.factorsListBox.FormattingEnabled = true;
@@ -59,6 +48,7 @@
             this.factorsListBox.Name = "factorsListBox";
             this.factorsListBox.Size = new System.Drawing.Size(433, 459);
             this.factorsListBox.TabIndex = 1;
+            this.factorsListBox.SelectedIndexChanged += new System.EventHandler(this.FactorsListBox_SelectedIndexChanged);
             // 
             // editButton
             // 
@@ -124,7 +114,7 @@
             // 
             this.instanceLabel.AutoSize = true;
             this.instanceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.instanceLabel.Location = new System.Drawing.Point(260, 9);
+            this.instanceLabel.Location = new System.Drawing.Point(221, 9);
             this.instanceLabel.Name = "instanceLabel";
             this.instanceLabel.Size = new System.Drawing.Size(66, 24);
             this.instanceLabel.TabIndex = 8;
@@ -172,7 +162,6 @@
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.factorsListBox);
-            this.Controls.Add(this.titleLabel);
             this.Name = "ManageOptions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Manage Options";
@@ -182,8 +171,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.ListBox factorsListBox;
         private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.Button addButton;

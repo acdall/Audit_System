@@ -38,11 +38,15 @@
             this.startTimelabel = new System.Windows.Forms.Label();
             this.endTimeLabel = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // submitButton
             // 
-            this.submitButton.Location = new System.Drawing.Point(246, 183);
+            this.submitButton.Location = new System.Drawing.Point(242, 263);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(75, 23);
             this.submitButton.TabIndex = 0;
@@ -51,7 +55,7 @@
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(142, 183);
+            this.saveButton.Location = new System.Drawing.Point(138, 263);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
             this.saveButton.TabIndex = 1;
@@ -60,7 +64,7 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(32, 183);
+            this.exitButton.Location = new System.Drawing.Point(28, 263);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 23);
             this.exitButton.TabIndex = 2;
@@ -70,7 +74,7 @@
             // startComboBox
             // 
             this.startComboBox.FormattingEnabled = true;
-            this.startComboBox.Location = new System.Drawing.Point(112, 101);
+            this.startComboBox.Location = new System.Drawing.Point(108, 181);
             this.startComboBox.Name = "startComboBox";
             this.startComboBox.Size = new System.Drawing.Size(193, 21);
             this.startComboBox.TabIndex = 3;
@@ -78,14 +82,14 @@
             // endComboBox
             // 
             this.endComboBox.FormattingEnabled = true;
-            this.endComboBox.Location = new System.Drawing.Point(112, 142);
+            this.endComboBox.Location = new System.Drawing.Point(108, 222);
             this.endComboBox.Name = "endComboBox";
             this.endComboBox.Size = new System.Drawing.Size(193, 21);
             this.endComboBox.TabIndex = 4;
             // 
             // shiftNameTextBox
             // 
-            this.shiftNameTextBox.Location = new System.Drawing.Point(112, 63);
+            this.shiftNameTextBox.Location = new System.Drawing.Point(108, 143);
             this.shiftNameTextBox.Name = "shiftNameTextBox";
             this.shiftNameTextBox.Size = new System.Drawing.Size(193, 20);
             this.shiftNameTextBox.TabIndex = 5;
@@ -93,7 +97,7 @@
             // shiftLabel
             // 
             this.shiftLabel.AutoSize = true;
-            this.shiftLabel.Location = new System.Drawing.Point(44, 66);
+            this.shiftLabel.Location = new System.Drawing.Point(40, 146);
             this.shiftLabel.Name = "shiftLabel";
             this.shiftLabel.Size = new System.Drawing.Size(62, 13);
             this.shiftLabel.TabIndex = 6;
@@ -102,7 +106,7 @@
             // startTimelabel
             // 
             this.startTimelabel.AutoSize = true;
-            this.startTimelabel.Location = new System.Drawing.Point(49, 109);
+            this.startTimelabel.Location = new System.Drawing.Point(45, 189);
             this.startTimelabel.Name = "startTimelabel";
             this.startTimelabel.Size = new System.Drawing.Size(58, 13);
             this.startTimelabel.TabIndex = 7;
@@ -111,7 +115,7 @@
             // endTimeLabel
             // 
             this.endTimeLabel.AutoSize = true;
-            this.endTimeLabel.Location = new System.Drawing.Point(49, 150);
+            this.endTimeLabel.Location = new System.Drawing.Point(45, 230);
             this.endTimeLabel.Name = "endTimeLabel";
             this.endTimeLabel.Size = new System.Drawing.Size(55, 13);
             this.endTimeLabel.TabIndex = 8;
@@ -127,11 +131,49 @@
             this.titleLabel.TabIndex = 10;
             this.titleLabel.Text = "New Shift";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(108, 98);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(193, 21);
+            this.comboBox1.TabIndex = 11;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(108, 57);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(193, 21);
+            this.comboBox2.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(55, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Factory:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(70, 101);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(30, 13);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Line:";
+            // 
             // manageShiftForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(355, 229);
+            this.ClientSize = new System.Drawing.Size(352, 306);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.endTimeLabel);
             this.Controls.Add(this.startTimelabel);
@@ -161,5 +203,9 @@
         private System.Windows.Forms.Label startTimelabel;
         private System.Windows.Forms.Label endTimeLabel;
         private System.Windows.Forms.Label titleLabel;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -89,7 +89,27 @@ namespace Audit_System
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            //redirect to new window to add data fields 
+            if (instanceLabel.Text == "Manage Factories")
+            {
+                this.Hide(); //Hides Menu
+                ManageFactories factoryAdd = new ManageFactories(); //Create instance ManageOptions
+                factoryAdd.FactoryLabel = "Add a New Factory"; //Changes the label in the ManageOptions form
+                factoryAdd.ShowDialog(); // Shows ManageOptions
+            }
+            else if (instanceLabel.Text == "Manage Categories")
+            {
+                this.Hide(); //Hides Menu
+                ManageCategories addCategory = new ManageCategories(); //Create instance ManageOptions
+                addCategory.CategoryLabel = "Add a New Category"; //Changes the label in the ManageOptions form
+                addCategory.ShowDialog(); // Shows ManageOptions
+            }
+            else if (instanceLabel.Text == "Manage Defects")
+            {
+                this.Hide(); //Hides Menu
+                ManageDefects addDefect = new ManageDefects(); //Create instance ManageOptions
+                addDefect.DefectLabel = "Add a New Defect"; //Changes the label in the ManageOptions form
+                addDefect.ShowDialog(); // Shows ManageOptions
+            }
         }
 
         private void RemoveButton_Click(object sender, EventArgs e)
@@ -100,6 +120,11 @@ namespace Audit_System
         private void EditButton_Click(object sender, EventArgs e)
         {
             //redirect to new form to edit an existing entry in the database
+        }
+
+        private void FactorsListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //load data from database..... maybe highlight saved? 
         }
     }
 }

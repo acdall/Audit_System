@@ -24,7 +24,7 @@ namespace Audit_System
             {
                 this.Hide(); //Hides Menu
                 ManageOptions factoryOption = new ManageOptions(); //Create instance ManageOptions
-                factoryOption.Name = "Factories"; //Changes the label in the ManageOptions form
+                factoryOption.Name = "Manage Factories"; //Changes the label in the ManageOptions form
                 factoryOption.ShowDialog(); // Shows ManageOptions
             }
             catch
@@ -44,7 +44,7 @@ namespace Audit_System
             {
                 this.Hide(); //Hides Menu
                 ManageOptions categoriesOption = new ManageOptions(); //Create instance ManageOptions
-                categoriesOption.Name = "Categories"; //Changes the label in the ManageOptions form
+                categoriesOption.Name = "Manage Categories"; //Changes the label in the ManageOptions form
                 categoriesOption.ShowDialog(); // Shows ManageOptions
             }
             catch
@@ -59,7 +59,7 @@ namespace Audit_System
             {
                 this.Hide(); //Hides Menu
                 ManageOptions productsOption = new ManageOptions(); //Create instance ManageOptions
-                productsOption.Name = "Products"; //Changes the label in the ManageOptions form
+                productsOption.Name = "Manage Products"; //Changes the label in the ManageOptions form
                 productsOption.ShowDialog(); // Shows ManageOptions
             }
             catch
@@ -73,7 +73,7 @@ namespace Audit_System
             {
                 this.Hide(); //Hides Menu
                 ManageOptions zoneOption = new ManageOptions(); //Create instance ManageOptions
-                zoneOption.Name = "Zones"; //Changes the label in the ManageOptions form
+                zoneOption.Name = "Manage Zones"; //Changes the label in the ManageOptions form
                 zoneOption.ShowDialog(); // Shows ManageOptions
             }
             catch
@@ -88,7 +88,7 @@ namespace Audit_System
             {
                 this.Hide(); //Hides Menu
                 ManageOptions shiftsOption = new ManageOptions(); //Create instance ManageOptions
-                shiftsOption.Name = "Shifts"; //Changes the label in the ManageOptions form
+                shiftsOption.Name = "Manage Shifts"; //Changes the label in the ManageOptions form
                 shiftsOption.ShowDialog(); // Shows ManageOptions
             }
             catch
@@ -103,7 +103,7 @@ namespace Audit_System
             {
                 this.Hide(); //Hides Menu
                 ManageOptions ratingsOption = new ManageOptions(); //Create instance ManageOptions
-                ratingsOption.Name = "Ratings"; //Changes the label in the ManageOptions form
+                ratingsOption.Name = "Manage Ratings"; //Changes the label in the ManageOptions form
                 ratingsOption.ShowDialog(); // Shows ManageOptions
             }
             catch
@@ -118,7 +118,7 @@ namespace Audit_System
             {
                 this.Hide(); //Hides Menu
                 ManageOptions modelsOption = new ManageOptions(); //Create instance ManageOptions
-                modelsOption.Name = "Models"; //Changes the label in the ManageOptions form
+                modelsOption.Name = "Manage Models"; //Changes the label in the ManageOptions form
                 modelsOption.ShowDialog(); // Shows ManageOptions
             }
             catch
@@ -133,7 +133,7 @@ namespace Audit_System
             {
                 this.Hide(); //Hides Menu
                 ManageOptions linesOption = new ManageOptions(); //Create instance ManageOptions
-                linesOption.Name = "Lines"; //Changes the label in the ManageOptions form
+                linesOption.Name = "Manage Lines"; //Changes the label in the ManageOptions form
                 linesOption.ShowDialog(); // Shows ManageOptions
             }
             catch
@@ -148,7 +148,7 @@ namespace Audit_System
             {
                 this.Hide(); //Hides Menu
                 ManageOptions productionOption = new ManageOptions(); //Create instance ManageOptions
-                productionOption.Name = "Productions"; //Changes the label in the ManageOptions form
+                productionOption.Name = "Manage Productions"; //Changes the label in the ManageOptions form
                 productionOption.ShowDialog(); // Shows ManageOptions
             }
             catch
@@ -163,7 +163,7 @@ namespace Audit_System
             {
                 this.Hide(); //Hides Menu
                 ManageOptions defectOption = new ManageOptions(); //Create instance ManageOptions
-                defectOption.Name = "Defects"; //Changes the label in the ManageOptions form
+                defectOption.Name = "Manage Defects"; //Changes the label in the ManageOptions form
                 defectOption.ShowDialog(); // Shows ManageOptions
             }
             catch

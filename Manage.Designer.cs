@@ -31,7 +31,6 @@
             this.categoriesButton = new System.Windows.Forms.Button();
             this.productsButton = new System.Windows.Forms.Button();
             this.modelsButton = new System.Windows.Forms.Button();
-            this.ratingsButton = new System.Windows.Forms.Button();
             this.menuButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.factoriesButton = new System.Windows.Forms.Button();
@@ -72,16 +71,6 @@
             this.modelsButton.UseVisualStyleBackColor = true;
             this.modelsButton.Click += new System.EventHandler(this.ModelsButton_Click);
             // 
-            // ratingsButton
-            // 
-            this.ratingsButton.Location = new System.Drawing.Point(238, 94);
-            this.ratingsButton.Name = "ratingsButton";
-            this.ratingsButton.Size = new System.Drawing.Size(75, 23);
-            this.ratingsButton.TabIndex = 3;
-            this.ratingsButton.Text = "Ratings";
-            this.ratingsButton.UseVisualStyleBackColor = true;
-            this.ratingsButton.Click += new System.EventHandler(this.RatingsButton_Click);
-            // 
             // menuButton
             // 
             this.menuButton.Location = new System.Drawing.Point(84, 293);
@@ -104,7 +93,7 @@
             // 
             // factoriesButton
             // 
-            this.factoriesButton.Location = new System.Drawing.Point(238, 56);
+            this.factoriesButton.Location = new System.Drawing.Point(238, 94);
             this.factoriesButton.Name = "factoriesButton";
             this.factoriesButton.Size = new System.Drawing.Size(75, 23);
             this.factoriesButton.TabIndex = 6;
@@ -175,7 +164,6 @@
             this.Controls.Add(this.factoriesButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.menuButton);
-            this.Controls.Add(this.ratingsButton);
             this.Controls.Add(this.modelsButton);
             this.Controls.Add(this.productsButton);
             this.Controls.Add(this.categoriesButton);
@@ -193,7 +181,6 @@
         private System.Windows.Forms.Button categoriesButton;
         private System.Windows.Forms.Button productsButton;
         private System.Windows.Forms.Button modelsButton;
-        private System.Windows.Forms.Button ratingsButton;
         private System.Windows.Forms.Button menuButton;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button factoriesButton;

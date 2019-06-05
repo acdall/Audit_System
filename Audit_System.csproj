@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -91,17 +91,35 @@
     <Compile Include="Defect.Designer.cs">
       <DependentUpon>Defect.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageMany.cs">
+    <Compile Include="ManageCategories.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManageMany.Designer.cs">
-      <DependentUpon>ManageMany.cs</DependentUpon>
+    <Compile Include="ManageCategories.Designer.cs">
+      <DependentUpon>ManageCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageDefects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageDefects.Designer.cs">
+      <DependentUpon>ManageDefects.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageFactories.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ManageFactories.Designer.cs">
       <DependentUpon>ManageFactories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageLines.Designer.cs">
+      <DependentUpon>ManageLines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageModels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageModels.Designer.cs">
+      <DependentUpon>ManageModels.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageOptions.cs">
       <SubType>Form</SubType>
@@ -115,11 +133,23 @@
     <Compile Include="Manage.Designer.cs">
       <DependentUpon>Manage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageProducts.Designer.cs">
+      <DependentUpon>ManageProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageShift.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ManageShift.Designer.cs">
       <DependentUpon>ManageShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageZone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageZone.Designer.cs">
+      <DependentUpon>ManageZone.cs</DependentUpon>
     </Compile>
     <Compile Include="ScoreCard.cs">
       <SubType>Form</SubType>
@@ -171,11 +201,20 @@
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManageMany.resx">
-      <DependentUpon>ManageMany.cs</DependentUpon>
+    <EmbeddedResource Include="ManageCategories.resx">
+      <DependentUpon>ManageCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageDefects.resx">
+      <DependentUpon>ManageDefects.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageFactories.resx">
       <DependentUpon>ManageFactories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageLines.resx">
+      <DependentUpon>ManageLines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageModels.resx">
+      <DependentUpon>ManageModels.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageOptions.resx">
       <DependentUpon>ManageOptions.cs</DependentUpon>
@@ -183,8 +222,14 @@
     <EmbeddedResource Include="Manage.resx">
       <DependentUpon>Manage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageProducts.resx">
+      <DependentUpon>ManageProducts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManageShift.resx">
       <DependentUpon>ManageShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageZone.resx">
+      <DependentUpon>ManageZone.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ScoreCard.resx">
       <DependentUpon>ScoreCard.cs</DependentUpon>
@@ -233,15 +278,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Audit.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Audit_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Audit.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

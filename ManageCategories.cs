@@ -9,43 +9,33 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 
+
 namespace Audit_System
 {
-    public partial class manageShiftForm : Form
+    public partial class ManageCategories : Form
     {
-        public manageShiftForm()
+        public ManageCategories()
         {
             InitializeComponent();
-            //get all factories 
-            //get all lines 
-
         }
-        public string ShiftLabel
+        public string CategoryLabel
         {
             set { titleLabel.Text = value; }
         }
-        private void SubmitButton_Click(object sender, EventArgs e)
-        {
+        private void ExitButton_Click(object sender, EventArgs e)
+        {//submit button NOT Exit... 
+            //check to see if category name already exists
+
             try
             {
-                TimeSpan timeOne = TimeSpan.Parse(startComboBox.Text);
-                TimeSpan timeTwo = TimeSpan.Parse(endComboBox.Text);
                 if (string.IsNullOrEmpty(nameTextBox.Text) || string.IsNullOrWhiteSpace(nameTextBox.Text))
                 {
-                    MessageBox.Show("Please Enter a Valid Shift Name.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Please Enter a Valid Category Name.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else if (!Regex.Match(nameTextBox.Text, "^[a-zA-Z]*$").Success)
                 {
-                    MessageBox.Show("Invalid Shift Name: A shift name cannot contain numbers or special characters", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Invalid Category Name: A category name cannot contain numbers or special characters", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     nameTextBox.Focus();
-                }
-                else if (timeOne.CompareTo(timeTwo) == 1)
-                {
-                    MessageBox.Show("The Start Time Must be Before the End Time.", "Time Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else if (timeOne.CompareTo(timeTwo) == 0)
-                {
-                    MessageBox.Show("The Start Time and End Time Cannot Be the Same.", "Time Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -59,10 +49,12 @@ namespace Audit_System
             }
         }
 
-        private void ExitButton_Click(object sender, EventArgs e)
+        private void ExButton_Click(object sender, EventArgs e)
         {
             try
             {
+                //if -- changes are made, save button needs to be clicked!!
+
                 DialogResult answer = MessageBox.Show("Are you sure you want to exit?", "Exit?", MessageBoxButtons.YesNo); //Warning 
                 if (answer == DialogResult.Yes) //User answer selection 
                 {
@@ -72,6 +64,7 @@ namespace Audit_System
             catch
             {
                 MessageBox.Show("An error has occured, the program will be terminated", "Warning", MessageBoxButtons.OK);
+
             }
         }
 
@@ -79,18 +72,19 @@ namespace Audit_System
         {
             try
             {
-                DialogResult answer = MessageBox.Show("Your changes have not been submitted. Are you sure you want to leave?", "Warning", MessageBoxButtons.YesNo); //Warning 
+                DialogResult answer = MessageBox.Show("Your changes have not been submitted. Are you sure you want to leave?", "Exit?", MessageBoxButtons.YesNo); //Warning 
                 if (answer == DialogResult.Yes) //User answer selection 
                 {
                     this.Hide(); //Hides Menu
-                    ManageOptions shiftsOption = new ManageOptions(); //Create instance ManageOptions
-                    shiftsOption.Name = "Manage Shifts"; //Changes the label in the ManageOptions form
-                    shiftsOption.ShowDialog(); // Shows ManageOptions
+                    ManageOptions categoriesOption = new ManageOptions(); //Create instance ManageOptions
+                    categoriesOption.Name = "Manage Categories"; //Changes the label in the ManageOptions form
+                    categoriesOption.ShowDialog(); // Shows ManageOptions                }
                 }
             }
             catch
             {
                 MessageBox.Show("An error has occured, the program will be terminated", "Warning", MessageBoxButtons.OK);
+
             }
         }
     }

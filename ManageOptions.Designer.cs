@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.titleLabel = new System.Windows.Forms.Label();
             this.factorsListBox = new System.Windows.Forms.ListBox();
             this.editButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
@@ -42,29 +41,24 @@
             this.mainMenuButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // titleLabel
-            // 
-            this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(177, 9);
-            this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(85, 24);
-            this.titleLabel.TabIndex = 0;
-            this.titleLabel.Text = "Manage";
-            // 
             // factorsListBox
             // 
             this.factorsListBox.FormattingEnabled = true;
-            this.factorsListBox.Location = new System.Drawing.Point(39, 73);
+            this.factorsListBox.Items.AddRange(new object[] {
+            "Test",
+            "test",
+            "test"});
+            this.factorsListBox.Location = new System.Drawing.Point(25, 73);
             this.factorsListBox.Name = "factorsListBox";
-            this.factorsListBox.Size = new System.Drawing.Size(433, 459);
+            this.factorsListBox.Size = new System.Drawing.Size(388, 355);
             this.factorsListBox.TabIndex = 1;
+            this.factorsListBox.SelectedIndexChanged += new System.EventHandler(this.FactorsListBox_SelectedIndexChanged);
             // 
             // editButton
             // 
-            this.editButton.Location = new System.Drawing.Point(487, 172);
+            this.editButton.Location = new System.Drawing.Point(422, 168);
             this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(75, 23);
+            this.editButton.Size = new System.Drawing.Size(84, 51);
             this.editButton.TabIndex = 2;
             this.editButton.Text = "Edit";
             this.editButton.UseVisualStyleBackColor = true;
@@ -72,9 +66,9 @@
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(487, 102);
+            this.addButton.Location = new System.Drawing.Point(422, 99);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(75, 23);
+            this.addButton.Size = new System.Drawing.Size(84, 52);
             this.addButton.TabIndex = 3;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
@@ -82,9 +76,9 @@
             // 
             // removeButton
             // 
-            this.removeButton.Location = new System.Drawing.Point(487, 143);
+            this.removeButton.Location = new System.Drawing.Point(422, 236);
             this.removeButton.Name = "removeButton";
-            this.removeButton.Size = new System.Drawing.Size(75, 23);
+            this.removeButton.Size = new System.Drawing.Size(84, 52);
             this.removeButton.TabIndex = 4;
             this.removeButton.Text = "Remove";
             this.removeButton.UseVisualStyleBackColor = true;
@@ -92,9 +86,9 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(487, 408);
+            this.exitButton.Location = new System.Drawing.Point(12, 443);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.Size = new System.Drawing.Size(103, 34);
             this.exitButton.TabIndex = 5;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
@@ -102,9 +96,9 @@
             // 
             // returnToMenuButton
             // 
-            this.returnToMenuButton.Location = new System.Drawing.Point(478, 478);
+            this.returnToMenuButton.Location = new System.Drawing.Point(250, 443);
             this.returnToMenuButton.Name = "returnToMenuButton";
-            this.returnToMenuButton.Size = new System.Drawing.Size(84, 23);
+            this.returnToMenuButton.Size = new System.Drawing.Size(103, 35);
             this.returnToMenuButton.TabIndex = 6;
             this.returnToMenuButton.Text = "Back";
             this.returnToMenuButton.UseVisualStyleBackColor = true;
@@ -112,9 +106,9 @@
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(487, 449);
+            this.saveButton.Location = new System.Drawing.Point(359, 443);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.Size = new System.Drawing.Size(103, 34);
             this.saveButton.TabIndex = 7;
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = true;
@@ -124,7 +118,7 @@
             // 
             this.instanceLabel.AutoSize = true;
             this.instanceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.instanceLabel.Location = new System.Drawing.Point(260, 9);
+            this.instanceLabel.Location = new System.Drawing.Point(195, 9);
             this.instanceLabel.Name = "instanceLabel";
             this.instanceLabel.Size = new System.Drawing.Size(66, 24);
             this.instanceLabel.TabIndex = 8;
@@ -132,15 +126,17 @@
             // 
             // searchTextBox
             // 
-            this.searchTextBox.Location = new System.Drawing.Point(121, 37);
+            this.searchTextBox.Location = new System.Drawing.Point(95, 37);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(318, 20);
             this.searchTextBox.TabIndex = 9;
+            this.searchTextBox.TextChanged += new System.EventHandler(this.SearchTextBox_TextChanged);
+            this.searchTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SearchTextBox_KeyDown);
             // 
             // searchLabel
             // 
             this.searchLabel.AutoSize = true;
-            this.searchLabel.Location = new System.Drawing.Point(39, 40);
+            this.searchLabel.Location = new System.Drawing.Point(13, 40);
             this.searchLabel.Name = "searchLabel";
             this.searchLabel.Size = new System.Drawing.Size(76, 13);
             this.searchLabel.TabIndex = 10;
@@ -148,9 +144,9 @@
             // 
             // mainMenuButton
             // 
-            this.mainMenuButton.Location = new System.Drawing.Point(487, 369);
+            this.mainMenuButton.Location = new System.Drawing.Point(130, 443);
             this.mainMenuButton.Name = "mainMenuButton";
-            this.mainMenuButton.Size = new System.Drawing.Size(75, 23);
+            this.mainMenuButton.Size = new System.Drawing.Size(103, 35);
             this.mainMenuButton.TabIndex = 11;
             this.mainMenuButton.Text = "Main Menu";
             this.mainMenuButton.UseVisualStyleBackColor = true;
@@ -160,7 +156,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 561);
+            this.ClientSize = new System.Drawing.Size(522, 490);
             this.Controls.Add(this.mainMenuButton);
             this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.searchTextBox);
@@ -172,7 +168,6 @@
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.factorsListBox);
-            this.Controls.Add(this.titleLabel);
             this.Name = "ManageOptions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Manage Options";
@@ -182,8 +177,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.ListBox factorsListBox;
         private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.Button addButton;

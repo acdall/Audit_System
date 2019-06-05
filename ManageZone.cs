@@ -11,50 +11,37 @@ using System.Text.RegularExpressions;
 
 namespace Audit_System
 {
-    public partial class manageShiftForm : Form
+    public partial class ManageZone : Form
     {
-        public manageShiftForm()
+        public ManageZone()
         {
             InitializeComponent();
-            //get all factories 
-            //get all lines 
-
         }
-        public string ShiftLabel
+        public string ZoneLabel
         {
             set { titleLabel.Text = value; }
         }
+        private void ManageZone_Load(object sender, EventArgs e)
+        {
+            //get model + Product info from database
+        }
+
         private void SubmitButton_Click(object sender, EventArgs e)
         {
             try
             {
-                TimeSpan timeOne = TimeSpan.Parse(startComboBox.Text);
-                TimeSpan timeTwo = TimeSpan.Parse(endComboBox.Text);
                 if (string.IsNullOrEmpty(nameTextBox.Text) || string.IsNullOrWhiteSpace(nameTextBox.Text))
                 {
-                    MessageBox.Show("Please Enter a Valid Shift Name.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Please Enter a Valid Zone Name.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else if (!Regex.Match(nameTextBox.Text, "^[a-zA-Z]*$").Success)
                 {
-                    MessageBox.Show("Invalid Shift Name: A shift name cannot contain numbers or special characters", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Invalid Zone Name: A Zone name cannot contain numbers or special characters", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     nameTextBox.Focus();
-                }
-                else if (timeOne.CompareTo(timeTwo) == 1)
-                {
-                    MessageBox.Show("The Start Time Must be Before the End Time.", "Time Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else if (timeOne.CompareTo(timeTwo) == 0)
-                {
-                    MessageBox.Show("The Start Time and End Time Cannot Be the Same.", "Time Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    //enter into database
                 }
             }
             catch
             {
-                MessageBox.Show("An error has occured, the program will be terminated", "Warning", MessageBoxButtons.OK);
 
             }
         }
@@ -63,15 +50,18 @@ namespace Audit_System
         {
             try
             {
-                DialogResult answer = MessageBox.Show("Are you sure you want to exit?", "Exit?", MessageBoxButtons.YesNo); //Warning 
-                if (answer == DialogResult.Yes) //User answer selection 
+                //if -- changes are made, save button needs to be clicked!!.Yes) //User answer selection 
                 {
+
+                DialogResult answer = MessageBox.Show("Are you sure you want to exit?", "Exit?", MessageBoxButtons.YesNo); //Warning 
+                if (answer == DialogResult)
                     Application.Exit(); //Terminate because user selected yes
                 }
             }
             catch
             {
                 MessageBox.Show("An error has occured, the program will be terminated", "Warning", MessageBoxButtons.OK);
+
             }
         }
 
@@ -83,9 +73,9 @@ namespace Audit_System
                 if (answer == DialogResult.Yes) //User answer selection 
                 {
                     this.Hide(); //Hides Menu
-                    ManageOptions shiftsOption = new ManageOptions(); //Create instance ManageOptions
-                    shiftsOption.Name = "Manage Shifts"; //Changes the label in the ManageOptions form
-                    shiftsOption.ShowDialog(); // Shows ManageOptions
+                    ManageOptions zoneOption = new ManageOptions(); //Create instance ManageOptions
+                    zoneOption.Name = "Manage Zones"; //Changes the label in the ManageOptions form
+                    zoneOption.ShowDialog(); // Shows ManageOptions
                 }
             }
             catch

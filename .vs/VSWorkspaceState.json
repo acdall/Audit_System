@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\obj\\Debug",
+    "\\Properties"
   ],
-  "SelectedNode": "\\Audit_System.sln",
+  "SelectedNode": "\\obj",
   "PreviewInSolutionExplorer": false
 }

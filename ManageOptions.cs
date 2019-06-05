@@ -52,7 +52,8 @@ namespace Audit_System
                 {
                     Application.Exit(); //Terminate because user selected yes
                 }
-            }catch
+            }
+            catch
             {
                 MessageBox.Show("An error has occured, the program will be terminated", "Warning", MessageBoxButtons.OK);
 
@@ -157,7 +158,21 @@ namespace Audit_System
 
         private void RemoveButton_Click(object sender, EventArgs e)
         {
-            //remove item from list in database
+            try
+            {
+                DialogResult answer = MessageBox.Show("Are you sure you want to Permanently Delete this Item?", "Delete?", MessageBoxButtons.YesNo); //Warning 
+                if (answer == DialogResult.Yes) //User answer selection 
+                {
+                    factorsListBox.Items.Remove(factorsListBox.SelectedItem);
+                    factorsListBox.Refresh();
+                }
+                
+            }
+            catch
+            {
+                MessageBox.Show("An error has occured, the program will be terminated", "Warning", MessageBoxButtons.OK);
+
+            }
         }
 
         private void EditButton_Click(object sender, EventArgs e)
@@ -236,6 +251,11 @@ namespace Audit_System
         private void SearchTextBox_TextChanged(object sender, EventArgs e)
         {
             //autosearch data 
+        }
+
+        private void SearchTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+       
         }
     }
 }

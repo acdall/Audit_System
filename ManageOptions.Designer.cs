@@ -44,6 +44,10 @@
             // factorsListBox
             // 
             this.factorsListBox.FormattingEnabled = true;
+            this.factorsListBox.Items.AddRange(new object[] {
+            "Test",
+            "test",
+            "test"});
             this.factorsListBox.Location = new System.Drawing.Point(25, 73);
             this.factorsListBox.Name = "factorsListBox";
             this.factorsListBox.Size = new System.Drawing.Size(388, 355);
@@ -127,6 +131,7 @@
             this.searchTextBox.Size = new System.Drawing.Size(318, 20);
             this.searchTextBox.TabIndex = 9;
             this.searchTextBox.TextChanged += new System.EventHandler(this.SearchTextBox_TextChanged);
+            this.searchTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SearchTextBox_KeyDown);
             // 
             // searchLabel
             // 
@@ -151,7 +156,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(522, 512);
+            this.ClientSize = new System.Drawing.Size(522, 490);
             this.Controls.Add(this.mainMenuButton);
             this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.searchTextBox);

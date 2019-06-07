@@ -81,9 +81,9 @@
             // menuButton
             // 
             this.menuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.menuButton.Location = new System.Drawing.Point(197, 343);
+            this.menuButton.Location = new System.Drawing.Point(214, 368);
             this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(82, 73);
+            this.menuButton.Size = new System.Drawing.Size(103, 40);
             this.menuButton.TabIndex = 4;
             this.menuButton.Text = "Return to Menu";
             this.menuButton.UseVisualStyleBackColor = true;
@@ -92,9 +92,9 @@
             // exitButton
             // 
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitButton.Location = new System.Drawing.Point(76, 343);
+            this.exitButton.Location = new System.Drawing.Point(56, 368);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(82, 73);
+            this.exitButton.Size = new System.Drawing.Size(103, 40);
             this.exitButton.TabIndex = 5;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;

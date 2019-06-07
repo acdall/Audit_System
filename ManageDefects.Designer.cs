@@ -46,7 +46,7 @@
             // 
             this.zonelabel.AutoSize = true;
             this.zonelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.zonelabel.Location = new System.Drawing.Point(26, 126);
+            this.zonelabel.Location = new System.Drawing.Point(55, 290);
             this.zonelabel.Name = "zonelabel";
             this.zonelabel.Size = new System.Drawing.Size(35, 13);
             this.zonelabel.TabIndex = 0;
@@ -55,7 +55,7 @@
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(2, 170);
+            this.nameLabel.Location = new System.Drawing.Point(55, 329);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(73, 13);
             this.nameLabel.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(17, 214);
+            this.exitButton.Location = new System.Drawing.Point(83, 377);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 23);
             this.exitButton.TabIndex = 2;
@@ -73,7 +73,7 @@
             // 
             // backButton
             // 
-            this.backButton.Location = new System.Drawing.Point(113, 214);
+            this.backButton.Location = new System.Drawing.Point(180, 377);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(75, 23);
             this.backButton.TabIndex = 3;
@@ -83,7 +83,7 @@
             // 
             // submitButton
             // 
-            this.submitButton.Location = new System.Drawing.Point(212, 214);
+            this.submitButton.Location = new System.Drawing.Point(277, 377);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(75, 23);
             this.submitButton.TabIndex = 4;
@@ -94,23 +94,23 @@
             // zoneComboBox
             // 
             this.zoneComboBox.FormattingEnabled = true;
-            this.zoneComboBox.Location = new System.Drawing.Point(67, 122);
+            this.zoneComboBox.Location = new System.Drawing.Point(134, 288);
             this.zoneComboBox.Name = "zoneComboBox";
             this.zoneComboBox.Size = new System.Drawing.Size(220, 21);
             this.zoneComboBox.TabIndex = 5;
             // 
             // nameTextBox
             // 
-            this.nameTextBox.Location = new System.Drawing.Point(81, 163);
+            this.nameTextBox.Location = new System.Drawing.Point(133, 329);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(206, 20);
+            this.nameTextBox.Size = new System.Drawing.Size(221, 20);
             this.nameTextBox.TabIndex = 6;
             // 
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(77, 9);
+            this.titleLabel.Location = new System.Drawing.Point(161, 81);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(113, 24);
             this.titleLabel.TabIndex = 7;
@@ -119,7 +119,7 @@
             // productLabel
             // 
             this.productLabel.AutoSize = true;
-            this.productLabel.Location = new System.Drawing.Point(17, 87);
+            this.productLabel.Location = new System.Drawing.Point(55, 251);
             this.productLabel.Name = "productLabel";
             this.productLabel.Size = new System.Drawing.Size(47, 13);
             this.productLabel.TabIndex = 10;
@@ -128,7 +128,7 @@
             // modelLabel
             // 
             this.modelLabel.AutoSize = true;
-            this.modelLabel.Location = new System.Drawing.Point(25, 52);
+            this.modelLabel.Location = new System.Drawing.Point(55, 212);
             this.modelLabel.Name = "modelLabel";
             this.modelLabel.Size = new System.Drawing.Size(39, 13);
             this.modelLabel.TabIndex = 11;
@@ -137,7 +137,7 @@
             // productComboBox
             // 
             this.productComboBox.FormattingEnabled = true;
-            this.productComboBox.Location = new System.Drawing.Point(66, 83);
+            this.productComboBox.Location = new System.Drawing.Point(133, 249);
             this.productComboBox.Name = "productComboBox";
             this.productComboBox.Size = new System.Drawing.Size(221, 21);
             this.productComboBox.TabIndex = 12;
@@ -145,7 +145,7 @@
             // modelComboBox
             // 
             this.modelComboBox.FormattingEnabled = true;
-            this.modelComboBox.Location = new System.Drawing.Point(66, 48);
+            this.modelComboBox.Location = new System.Drawing.Point(133, 214);
             this.modelComboBox.Name = "modelComboBox";
             this.modelComboBox.Size = new System.Drawing.Size(221, 21);
             this.modelComboBox.TabIndex = 13;
@@ -154,7 +154,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(309, 253);
+            this.ClientSize = new System.Drawing.Size(434, 561);
             this.Controls.Add(this.modelComboBox);
             this.Controls.Add(this.productComboBox);
             this.Controls.Add(this.modelLabel);
